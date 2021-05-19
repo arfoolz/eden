@@ -1,31 +1,40 @@
 <template>
     <div>
         <v-row>
-            <div style="padding-top: 9%; margin-left: 26%;">
-            <img src="@/assets/404.png" width="85%" height="85%">
-            </div>
-        </v-row>
-        <v-row>
-            <div style="padding-top: 2%; margin-left: 35%;">
-            <bold style="font-size:40px">Page Not Found</bold>
-            </div>
-        </v-row>
-        <v-row>
-            <div style="padding-top: 0%; margin-left: 32%;">
-            <span style="font-size:20px; color: grey;">The page you are looking for is not found</span>
-            </div>
+          <v-col>
+              <div style="padding-top: 9%; text-align:center">
+              <img src="@/assets/404.png" width="35%" height="35%">
+              </div>
+          </v-col>
         </v-row>
 
         <v-row>
-            <div style="padding-top: 4%; margin-left: 39%;">
-               <v-btn
-                @click="refresh"
-                height="50"
-                style="weight: 100px; color: #768F9C; border-radius: 25px; background-color: #768F9C; color: white;"
-                >Back to Dashboard
-                </v-btn>
+          <v-col>
+            <div class="text-center">
+            <h1 style="font-size:35px">Page Not Found</h1>
             </div>
-            
+          </v-col>
+        </v-row>
+
+        <v-row>
+          <v-col>
+            <div class="text-center">
+            <span style="font-size:20px; color: grey;">The page you are looking for is not found</span>
+            </div>
+          </v-col>
+        </v-row>
+
+        <v-row>
+          <v-col>
+            <div class="text-center">
+              <v-btn
+              @click="refresh"
+              height="50"
+              style="weight: 100px; color: #768F9C; border-radius: 25px; background-color: #768F9C; color: white;"
+              >Back to Dashboard
+              </v-btn>
+            </div>
+          </v-col>
         </v-row>
     </div>
 </template>

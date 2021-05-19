@@ -13,9 +13,9 @@
 <script>
   export default {
     name: 'h-layout',
-    components: {
-      'h-navigation': () => import('../components/Nav'),
-    },
+    // components: {
+    //   'h-navigation': () => import('../components/Nav'),
+    // },
     computed: {
       key() {
         return this.$route.path

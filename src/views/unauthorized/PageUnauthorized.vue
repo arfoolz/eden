@@ -1,23 +1,32 @@
 <template>
     <div>
         <v-row>
-            <div style="padding-top: 5%; margin-left: 28%;">
-            <img src="@/assets/401.png" width="85%" height="85%">
+          <v-col>
+             <div style="padding-top: 5%; text-align:center">
+            <img src="@/assets/401.png" width="35%" height="35%">
             </div>
+          </v-col>
         </v-row>
+
         <v-row>
-            <div style="padding-top: -10%; margin-left: 34%;">
-            <bold style="font-size:40px">Unauthorized Access</bold>
-            </div>
+            <v-col>
+              <div class="text-center">
+              <h1 style="font-size:35px">Unauthorized Access</h1>
+              </div>
+            </v-col>
         </v-row>
+
         <v-row>
-            <div style="padding-top: 0%; margin-left: 32%;">
-            <span style="font-size:20px; color: grey;">Your account does not have access to this page</span>
-            </div>
+            <v-col>
+              <div class="text-center">
+              <span style="font-size:20px; color: grey;">Your account does not have access to this page</span>
+              </div>
+            </v-col>
         </v-row>
     
         <v-row>
-            <div style="padding-top: 2%; margin-left: 42%;">
+            <v-col>
+               <div class="text-center">
                <v-btn
                 @click="refresh"
                 height="50"
@@ -25,7 +34,7 @@
                 >Back to Dashboard
                 </v-btn>
             </div>
-            
+            </v-col>
         </v-row>
     </div>
 </template>
